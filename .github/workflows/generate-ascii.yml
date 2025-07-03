@@ -1,4 +1,4 @@
-name: my first workflow
+name: Generate ASCII Artwork
 
 on: push
 
@@ -15,14 +15,11 @@ jobs:
     - name: Execute Cowsay CMD
       run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
 
-    - name: Text File Exists
+    - name: Test File Exists
       run: grep -i "dragon" dragon.txt
 
     - name: Read file 
       run: cat dragon.txt
-
-    - name: Generate ASCII Artwork
-      run: 
-
+    
     - name: List Repo Files
       run: ls -lrta
