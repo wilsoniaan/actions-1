@@ -24,5 +24,5 @@ jobs:
     - name: Generate ASCII Artwork
       run: 
 
-    - name: Checkout Repo Files
-      run: ls
+    - name: List Repo Files
+      run: ls -lrta
